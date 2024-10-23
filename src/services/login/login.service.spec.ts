@@ -20,17 +20,27 @@ describe('AuthService', () => {
     expect(service).toBeTruthy();
   });
 
-  describe('login', () => {
-    it('should return true and set authenticated if credentials are valid', () => {
-      const result = service.login(config.validUser, config.validPassword);
-      expect(result).toBeTrue();
-      expect(sessionStorage.getItem('authenticated')).toBe('true');
-    });
+  it('should return true and set authenticated if credentials are valid', () => {
+    const result = service.login(config.validUser, config.validPassword);
+    expect(result).toBeTrue();
+    expect(sessionStorage.getItem('authenticated')).toBe('true');
+  });
 
-    it('should return false if credentials are invalid', () => {
-      const result = service.login('invalidUser', 'invalidPassword');
-      expect(result).toBeFalse();
-      expect(sessionStorage.getItem('authenticated')).toBeNull();
-    });
+  it('should return false if credentials are invalid', () => {
+    const result = service.login('invalidUser', 'invalidPassword');
+    expect(result).toBeFalse();
+    expect(sessionStorage.getItem('authenticated')).toBeNull();
+  });
+
+  it('should logout', () => {
+    service.login(config.validUser, config.validPassword);
+    service.logout();
+    expect(sessionStorage.getItem('authenticated')).toBeNull();
+  });
+
+  it('should return true if user is authenticated', () => {
+    service.login(config.validUser, config.validPassword);
+    const result = service.isAuthenticated();
+    expect(result).toBeTrue();
   });
 });
