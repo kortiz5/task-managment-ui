@@ -3,8 +3,9 @@ import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
 import { ITask } from '../../../models/ITask';
 import { TaskService } from '../../../services/task/task.service';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
+import { AuthService } from '../../../services/login/login.service'; // Importa el AuthService
 
 @Component({
   selector: 'app-task-list',
@@ -19,7 +20,9 @@ export class TaskListComponent {
   isDeleteATask: boolean = false;
 
   constructor(
-    private taskService: TaskService
+    private taskService: TaskService,
+    private authService: AuthService, // Inyecta el AuthService
+    private router: Router // Inyecta el Router
   ) {}
 
   ngOnInit() {
@@ -46,4 +49,8 @@ export class TaskListComponent {
     });
   }
 
+  logout() {
+    this.authService.logout(); // Llama al método logout del AuthService
+    this.router.navigate(['/login']); // Redirige al usuario al login
+  }
 }

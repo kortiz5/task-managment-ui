@@ -24,7 +24,7 @@ export class TaskFormComponent {
     private activatedRoute: ActivatedRoute,
     private formBuilder: FormBuilder,
     private taskService: TaskService,
-    private router: Router
+    private router: Router // Importa el Router para navegar
   ) {
     this.formTask = this.formBuilder.group({
       id: [null],
@@ -81,5 +81,10 @@ export class TaskFormComponent {
         console.log('Error in update task', error);
       } 
     });
+  }
+
+  // Nuevo método para cancelar la creación o edición de la tarea
+  cancel() {
+    this.router.navigateByUrl('/'); // Navegar a la página anterior o a una específica
   }
 }

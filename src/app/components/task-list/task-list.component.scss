@@ -1,0 +1,61 @@
+/* Estilo para la barra de botones (New Task y Logout) */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Baja el botón New Task del top */
+}
+
+/* Espaciado entre los botones en la card de tareas */
+.footer-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px; /* Espaciado entre los botones */
+}
+
+.p-button {
+    width: auto; /* Define el tamaño uniforme de los botones */
+}
+
+/* Estilo para el grid de las tareas */
+.tasks-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Espaciado entre las tarjetas de tareas */
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilo para las tarjetas de tareas */
+.task-container {
+    width: 300px;
+    max-width: 100%;
+}
+
+.task-image {
+    width: 100%;
+    height: auto;
+}
+
+/* Estilo cuando no hay tareas */
+.no-tasks-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+.cat-image {
+    width: 500px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.task-card {
+    padding: 10px;
+}

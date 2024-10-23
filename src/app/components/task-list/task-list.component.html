@@ -1,23 +1,30 @@
+<div class="container">
+    <a routerLink="task-form/new" class="p-button font-bold">New Task</a>
+    <button pButton label="Logout" class="p-button-danger logout-button" (click)="logout()"></button>
+</div>
 
-<a routerLink="task-form/new" class="p-button font-bold">
-    New Task
-</a>
-
-@for (task of tasks; track task.id){
-    <p-card header={{task.title}} [style]="{ width: '360px' }">
-        <ng-template pTemplate="header">
-            <img alt="Card" src="https://primefaces.org/cdn/primeng/images/card-ng.jpg" />
-        </ng-template>
-        <p>
-            {{task.description}}
-        </p>
-        <ng-template pTemplate="footer">
-            <div class="flex gap-3 mt-1">
-                <p-button label="Delete" severity="secondary" class="w-full" styleClass="w-full" (onClick)="deleteTask(task.id)"/>
-                <a routerLink="task-form/{{task.id}}" class="p-button">Edit</a>
-            </div>
-        </ng-template>
-    </p-card>
-} @empty {
-    <p>No tasks found</p>
-}
+<div class="tasks-grid">
+    @for (task of tasks; track task.id) {
+        <div class="task-container">
+            <p-card [header]="task.title" class="task-card">
+                <ng-template pTemplate="header">
+                    <img alt="Task Image" src="/OIP.jpg" class="task-image" />
+                </ng-template>
+                <p class="task-description">
+                    {{ task.description }}
+                </p>
+                <ng-template pTemplate="footer">
+                    <div class="footer-buttons">
+                        <p-button label="Delete" severity="danger" class="delete-button" (onClick)="deleteTask(task.id)"></p-button>
+                        <p-button label="Edit" routerLink="task-form/{{task.id}}" class="edit-button"></p-button>
+                    </div>
+                </ng-template>
+            </p-card>
+        </div>
+    } @empty {
+        <div class="no-tasks-container">
+            <p>No tasks found</p>
+            <img src="/OIP-Photoroom.png" alt="Cat Image" class="cat-image" />
+        </div>
+    }
+</div>

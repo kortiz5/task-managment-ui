@@ -1,27 +1,85 @@
-# TaskManagment
+<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
+<a id="readme-top"></a>
+<!--
+*** Thanks for checking out the Best-README-Template. If you have a suggestion
+*** that would make this better, please fork the repo and create a pull request
+*** or simply open an issue with the tag "enhancement".
+*** Don't forget to give the project a star!
+*** Thanks again! Now go create something AMAZING! :D
+-->
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.9.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+<!-- PROJECT SHIELDS -->
+<!--
+*** I'm using markdown "reference style" links for readability.
+*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
+*** See the bottom of this document for the declaration of the reference variables
+*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
+*** https://www.markdownguide.org/basic-syntax/#reference-style-links
+-->
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+<!-- PROJECT LOGO -->
+<br />
+<div align="center">
+  <a href="https://github.com/othneildrew/Best-README-Template">
+    <img src="images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-## Build
+  <h3 align="center">Task-managment-web-ui</h3>
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
+El mejor frontend lleno de michis donde vamos a gestionar tareas
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Use the `BLANK_README.md` to get started.
 
-## Running end-to-end tests
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+### Built With
+
+hecho con mucho café y :
+
+* [![Angular][Angular.io]][Angular-url]
+* [![TypeScript][TypeScript.org]][TypeScript-url]
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+como empezamos?
+
+
+
+### Execution
+
+_Para ejecutar este proyecto se debe:_
+
+1. Descargar el frontEnd de github 
+```
+(ya lo tienes por que estas leyendo esto)
+```
+
+2. Descargar el backEnd 
+```
+https://github.com/kortiz5/task-managment-mngr
+```
+
+3. Verificar que ambos proyectos esten en la misma carpeta
+
+3. Instalar dependencias
+   ```sh
+   npm install
+   ```
+4. Encender el servidor (se prende backend y frontend)
+   ```
+   npm run start
+   ```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
