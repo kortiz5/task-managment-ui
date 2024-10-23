@@ -1,19 +1,3 @@
-<!--
-*** 
-How update version in badge
- -  create mock in hosting and save next value 
-    {
-        "schemaVersion": 1,
-        "logoSvg": "java",
-        "label": "X-MEN FNT",
-        "message": "X-MEN FUNCTION",
-        "color": "blue"
-    }
- - Replace the url in &url=https%3A%2F%2
-  / -> %2F
-@lmora16
--->
-
 <img src="icon.png" align="right" alt="library" style="width:12%"/>
 
 # task-managment-ui
