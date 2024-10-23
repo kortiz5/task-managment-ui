@@ -5,7 +5,7 @@ import { ITask } from '../../../models/ITask';
 import { TaskService } from '../../../services/task/task.service';
 import { RouterModule, Router } from '@angular/router';
 import { MessageService } from 'primeng/api';
-import { AuthService } from '../../../services/login/login.service'; // Importa el AuthService
+import { AuthService } from '../../../services/login/login.service';
 
 @Component({
   selector: 'app-task-list',
@@ -21,8 +21,8 @@ export class TaskListComponent {
 
   constructor(
     private taskService: TaskService,
-    private authService: AuthService, // Inyecta el AuthService
-    private router: Router // Inyecta el Router
+    private authService: AuthService,
+    private router: Router
   ) {}
 
   ngOnInit() {
@@ -50,7 +50,7 @@ export class TaskListComponent {
   }
 
   logout() {
-    this.authService.logout(); // Llama al método logout del AuthService
-    this.router.navigate(['/login']); // Redirige al usuario al login
+    this.authService.logout();
+    this.router.navigate(['/login']);
   }
 }

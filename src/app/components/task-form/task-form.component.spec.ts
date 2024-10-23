@@ -139,7 +139,7 @@ describe('TaskFormComponent', () => {
   it('should enter edit mode and call getTaskById when id is not "new"', () => {
     const activatedRouteMock = TestBed.inject(ActivatedRoute);
     activatedRouteMock.snapshot.paramMap.get = jasmine.createSpy('get').and.returnValue('1');
-    taskServiceMock.getTaskById.and.returnValue(of({ id: 2, title: 'New Task', description: 'New Description' }) as any); // Cambia el valor a '1' en lugar de 'new'
+    taskServiceMock.getTaskById.and.returnValue(of({ id: 2, title: 'New Task', description: 'New Description' }) as any);
 
     component.ngOnInit();
   
