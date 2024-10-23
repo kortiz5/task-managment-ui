@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
-import { ITask } from '../../models/ITask';
-import { TaskService } from '../../services/task.service';
+import { ITask } from '../../../models/ITask';
+import { TaskService } from '../../../services/task/task.service';
 import { RouterModule } from '@angular/router';
 import { MessageService } from 'primeng/api';
 
@@ -19,8 +19,7 @@ export class TaskListComponent {
   isDeleteATask: boolean = false;
 
   constructor(
-    private taskService: TaskService,
-    private messageService: MessageService
+    private taskService: TaskService
   ) {}
 
   ngOnInit() {
@@ -37,20 +36,10 @@ export class TaskListComponent {
     this.isDeleteATask = true;
     this.taskService.deleteTask(id).subscribe({
       next: () => {
-        this.messageService.add({
-          severity: 'success',
-          summary: 'Correcto',
-          detail: 'task deleted successfully',
-        });
         this.getTasks();
         this.isDeleteATask = false;
       },
       error: (error) => {
-        this.messageService.add({
-          severity: 'error',
-          summary: 'Error',
-          detail: error.error?.message,
-        });
         console.error(error);
         this.isDeleteATask = false;
       }

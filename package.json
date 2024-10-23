@@ -3,10 +3,12 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "./scripts/startApplication.sh",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "test:coverage": "ng test --code-coverage",
+    "coverage:web": "ng test --code-coverage && npx open-cli coverage/index.html"
   },
   "private": true,
   "dependencies": {
