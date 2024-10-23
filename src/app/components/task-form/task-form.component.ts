@@ -83,8 +83,8 @@ export class TaskFormComponent {
     });
   }
 
-  // Nuevo método para cancelar la creación o edición de la tarea
+ 
   cancel() {
-    this.router.navigateByUrl('/'); // Navegar a la página anterior o a una específica
+    this.router.navigateByUrl('/');
   }
 }
