@@ -1,85 +1,66 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/othneildrew/Best-README-Template/pull/73 -->
-<a id="readme-top"></a>
 <!--
-*** Thanks for checking out the Best-README-Template. If you have a suggestion
-*** that would make this better, please fork the repo and create a pull request
-*** or simply open an issue with the tag "enhancement".
-*** Don't forget to give the project a star!
-*** Thanks again! Now go create something AMAZING! :D
+*** 
+How update version in badge
+ -  create mock in hosting and save next value 
+    {
+        "schemaVersion": 1,
+        "logoSvg": "java",
+        "label": "X-MEN FNT",
+        "message": "X-MEN FUNCTION",
+        "color": "blue"
+    }
+ - Replace the url in &url=https%3A%2F%2
+  / -> %2F
+@lmora16
 -->
 
+<img src="icon.png" align="right" alt="library" style="width:12%"/>
+
+# task-managment-ui
+
+<!--DESCRIPTION -->
+## 📃 Description
+
+El mejor frontend lleno de michis donde vamos a gestionar tareas.
 
 
-<!-- PROJECT SHIELDS -->
-<!--
-*** I'm using markdown "reference style" links for readability.
-*** Reference links are enclosed in brackets [ ] instead of parentheses ( ).
-*** See the bottom of this document for the declaration of the reference variables
-*** for contributors-url, forks-url, etc. This is an optional, concise syntax you may use.
-*** https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
+<!--BUILD WITH-->
+## ✅ Build with
+
+mucho café y :
+
+<img src="https://cdn.freebiesupply.com/logos/large/2x/angular-icon-1-logo-png-transparent.png" alt="QA" width="50" height="50">
 
 
-<!-- PROJECT LOGO -->
-<br />
-<div align="center">
-  <a href="https://github.com/othneildrew/Best-README-Template">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
-  </a>
-
-  <h3 align="center">Task-managment-web-ui</h3>
-
-
-El mejor frontend lleno de michis donde vamos a gestionar tareas
-
-Use the `BLANK_README.md` to get started.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-### Built With
-
-hecho con mucho café y :
-
-* [![Angular][Angular.io]][Angular-url]
-* [![TypeScript][TypeScript.org]][TypeScript-url]
-
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<img src="https://cdn.icon-icons.com/icons2/2415/PNG/512/typescript_plain_logo_icon_146316.png" alt="QA" width="50" height="50">
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## 📚 Getting Started
 
-como empezamos?
+### Prerequisites
+
+1. Nodejs > 20.x
+2. Angular
+3. Typescript
 
 
 
-### Execution
+### Installation
 
-_Para ejecutar este proyecto se debe:_
-
-1. Descargar el frontEnd de github 
-```
-(ya lo tienes por que estas leyendo esto)
-```
-
-2. Descargar el backEnd 
-```
-https://github.com/kortiz5/task-managment-mngr
+```bash
+$ npm install
 ```
 
-3. Verificar que ambos proyectos esten en la misma carpeta
 
-3. Instalar dependencias
-   ```sh
-   npm install
-   ```
-4. Encender el servidor (se prende backend y frontend)
-   ```
-   npm run start
-   ```
+### Running the app
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+```bash
+# start front and back at the same time
+npm run start
+
+```
+
+## 😎 Stay in touch
+
