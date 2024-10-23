@@ -41,6 +41,12 @@ $ npm install
 ### Running the app
 
 ```bash
+
+# FIRST
+
+You need to make sure that the backend and frontend are in the same folder located
+With this you start them at the same time
+
 # start front and back at the same time
 npm run start
 
